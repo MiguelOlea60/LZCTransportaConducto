@@ -17,7 +17,7 @@
         <item name="android:textColorHint">@color/white</item>
         <!-- Customize your theme here. -->
     </style>
-
+//Comentario de prueba
     <style name="EditTextGrey" parent="TextAppearance.AppCompat">
         <item name="colorControlNormal">@color/grey_dark</item>
         <item name="colorControlActivated">@color/grey_dark</item>
