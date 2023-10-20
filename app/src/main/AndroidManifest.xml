@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.optic.uberclonedriverkotlin" >
+    package="com.optic.LZCTransportaConductor" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -22,38 +22,38 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.UberCloneDriverKotlin"
+        android:theme="@style/Theme.LZCTransportaConductor"
         tools:targetApi="31" >
 
-        <receiver android:name=".receivers.AcceptReceiver"
+        <receiver android:name="com.optic.LZCTransportaConductor.receivers.AcceptReceiver"
                     android:enabled="true" />
 
-        <receiver android:name=".receivers.CancelReceiver"
+        <receiver android:name="com.optic.LZCTransportaConductor.receivers.CancelReceiver"
                     android:enabled="true" />
         <activity
-            android:name=".activities.HistoriesDetailActivity"
+            android:name="com.optic.LZCTransportaConductor.activities.HistoriesDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.HistoriesActivity"
+            android:name="com.optic.LZCTransportaConductor.activities.HistoriesActivity"
             android:exported="false"
-            android:parentActivityName=".activities.MapActivity" />
+            android:parentActivityName="com.optic.LZCTransportaConductor.activities.MapActivity" />
         <activity
-            android:name=".activities.ProfileActivity"
+            android:name="com.optic.LZCTransportaConductor.activities.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.CalificationClientActivity"
+            android:name="com.optic.LZCTransportaConductor.activities.CalificationClientActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MapTripActivity"
+            android:name="com.optic.LZCTransportaConductor.activities.MapTripActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MapActivity"
+            android:name="com.optic.LZCTransportaConductor.activities.MapActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.RegisterActivity"
+            android:name="com.optic.LZCTransportaConductor.activities.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name="com.optic.LZCTransportaConductor.activities.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,7 +67,7 @@
             android:value="AIzaSyBNsO_PL68FV3jwJI3P60MQzVmudGf9WOU" />
 
         <service
-            android:name=".services.MyFirebaseMessagingClient"
+            android:name="com.optic.LZCTransportaConductor.services.MyFirebaseMessagingClient"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
